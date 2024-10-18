@@ -19,11 +19,11 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## Diagram
 
 ```mermaid
-flowChart
+flowchart TD
 A[Home Page] --> B[Article]
 B --> C{Get dynamic content}
 C -- Image --> E[Get image from APOD API]
-D -- Video --> F[Embed video in iframe]
+C -- Video --> F[Embed video in iframe]
 E --> G[Rendered Article Page]
 F --> G[Rendered Article Page]
 ```
